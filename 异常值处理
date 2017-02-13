@@ -1,3 +1,8 @@
+#处理顺序#
+try -> 异常 -> except -> finally
+try -> 无异常 -> else -> finally
+
+#完整语法#
 try:
     ...
 except exception1:
