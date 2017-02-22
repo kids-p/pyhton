@@ -1,0 +1,5 @@
+import snap
+Rnd = snap.TRnd()
+UGraph = snap.GenPrefAttach(500,1,Rnd)
+snap.DrawGViz(UGraph, snap.gvlSfdp,"graph_generation_exp.png","BA network", False)
+snap.PlotInDegDistr(UGraph, "Degree_distribution", "Degree distribution(BA network)")
